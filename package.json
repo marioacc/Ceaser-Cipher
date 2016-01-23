@@ -1,0 +1,22 @@
+{
+  "name": "ceasercipher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marioacc/Ceaser-Cipher.git"
+  },
+  "author": "carla08 and marioacc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marioacc/Ceaser-Cipher/issues"
+  },
+  "homepage": "https://github.com/marioacc/Ceaser-Cipher#readme"
+}
