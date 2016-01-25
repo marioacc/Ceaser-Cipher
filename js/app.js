@@ -30,8 +30,8 @@ function codeString(text,key){
   var codedString="";
   var codedChar="";
   for (var i = 0; i < text.length; i++) {
-    if (text[i]!==" ") {
-      var index = (alphabet.indexOf(text.charAt(i))+key).mod(26); 
+    if (text.charAt(i)!==" ") {
+      var index = (alphabet.indexOf(text.charAt(i))+key).mod(26);
       codedChar=alphabet[index];
       codedString=codedString+codedChar;
     }else {
@@ -79,12 +79,12 @@ function brute() {
 			var cipher_text = $('[name="cipherText"]').val().toLowerCase(); //get the ciphertext.
 			if (keys[i] !== key) { //grab only the mismatched keys...
 				var coded_possible_plain = codeString(cipher_text, keys[i]);
-				no_key_p.append("<br>Plain text for key: " + (keys[i]*-1) + " is: " +coded_possible_plain); 
+				no_key_p.append("<br>Plain text for key: " + (keys[i]*-1) + " is: " +coded_possible_plain);
 			}
 
 		}
 		//finally calculate for the first key (this is in case this is the most repeated, which is likely the case.)
-		no_key_p.append("<br>Plain text for key: " + key + " is: " + codeString(cipher_text,(key*-1))); 
-	} 
-	
+		no_key_p.append("<br>Plain text for key: " + key + " is: " + codeString(cipher_text,(key*-1)));
+	}
+
 } //Brute force end.

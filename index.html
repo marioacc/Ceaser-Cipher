@@ -4,23 +4,30 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/skeleton.css" media="screen" title="no title" charset="utf-8">
+    <style>
+
+    </style>
     <title></title>
   </head>
   <body>
-    <form class=" row twelve ">
-      <h1>Encoder & Decoder</h1>
-      <label for="plainText">Plain Text</label>
-      <input class="row" type="text" name="plainText" value="">
-      <label for="cipherText">Cipher Text</label>
-      <input class="row" type="text" name="cipherText" value="">
-      <input class="row" type="number" name="key" value="1" min="1" max="25">
-      <input type="button" name="decodeButton" value="Decode" onclick="decode()">
-      <input type="button" name="encodeButton" value="Encode" onclick="encode()">
-      <input type="button" name="bruteButton" value="Brute Force Madafaka" onclick="brute();">
-    </form>
+    <div class="container u-cf" style="margin: 0 auto, text-align: center">
+      <form class="container ">
+        <h1 class="u-full-width" style="text-align:center">Encoder & Decoder</h1>
+        <label for="plainText">Plain Text</label>
+        <input class="row" type="text" name="plainText" value="">
+        <label for="cipherText">Cipher Text</label>
+        <input class="row" type="text" name="cipherText" value="">
+        <input class="row" type="number" name="key" value="1" min="1" max="25">
+        <div class="row">
+          <input  class="button-primary" type="button" name="decodeButton" value="Decode" onclick="decode()">
+          <input  class="button-primary" type="button" name="encodeButton" value="Encode" onclick="encode()">
+          <input  class="button-primary" type="button" name="bruteButton" value="Brute Force Madafaka" onclick="brute();">
+        </div>
+      </form>
       <div>
         <p id = "no_key"></p>
       </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js" charset="urf-8"/></script>
   </body>
