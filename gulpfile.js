@@ -1,9 +1,9 @@
 var gulp = require("gulp");
-var nodemon = require("gulp-nodemon");
+var browserSync = require('browser-sync').create();
+
 gulp.task('start', function () {
-  nodemon({
-    script: 'index.html'
-  , ext: 'js html jade'
-  , env: { 'NODE_ENV': 'development' }
-  })
-})
+  browserSync.init({
+      server: {
+          baseDir: "./"
+      }
+});
